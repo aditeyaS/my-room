@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html[data-theme='morning'] {
+    --base-100: 255 255 255;
+    --base-200: 229 228 226;
+    --base-content: 0 0 0;
+    --primary: 123 223 242;
+    --secondary: 0 255 0;
+    --accent: 255 0 0;
+    background: rgb(var(--base-100));
+    color: rgb(var(--base-content));
+  }
+
+  html[data-theme='afternoon'] {
+    --base-100: 253 240 207;
+    --base-200: 229 228 226;
+    --base-content: 0 0 0;
+    --primary: 123 223 242;
+    --secondary: 0 255 0;
+    --accent: 255 0 0;
+    background: rgb(var(--base-100));
+    color: rgb(var(--base-content));
+  }
+
+  html[data-theme='evening'] {
+    --base-100: 71 93 133;
+    --base-200: 229 228 226;
+    --base-content: 0 0 0;
+    --primary: 123 223 242;
+    --secondary: 0 255 0;
+    --accent: 255 0 0;
+    background: rgb(var(--base-100));
+    color: rgb(var(--base-content));
+  }
+
+  html[data-theme='night'] {
+    --base-100: 0 0 0;
+    --base-200: 33 31 33;
+    --base-content: 255 255 255;
+    --primary: 242 181 212;
+    --secondary: 0 255 0;
+    --accent: 255 0 0;
+    background-color: rgb(var(--base-100));
+    color: rgb(var(--base-content));
+  }
+}
